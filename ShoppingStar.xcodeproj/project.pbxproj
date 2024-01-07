@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		781DD1C22B4ACE16000B501D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781DD1C12B4ACE16000B501D /* MainTabView.swift */; };
 		78ACCAFA2B49AC34004639F2 /* ShoppingStarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACCAF92B49AC34004639F2 /* ShoppingStarApp.swift */; };
 		78ACCAFC2B49AC34004639F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACCAFB2B49AC34004639F2 /* ContentView.swift */; };
 		78ACCAFE2B49AC35004639F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78ACCAFD2B49AC35004639F2 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		781DD1C12B4ACE16000B501D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		78ACCAF62B49AC34004639F2 /* ShoppingStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78ACCAF92B49AC34004639F2 /* ShoppingStarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingStarApp.swift; sourceTree = "<group>"; };
 		78ACCAFB2B49AC34004639F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		781DD1C02B4ACDA0000B501D /* RootView */ = {
+			isa = PBXGroup;
+			children = (
+				78ACCAF92B49AC34004639F2 /* ShoppingStarApp.swift */,
+			);
+			path = RootView;
+			sourceTree = "<group>";
+		};
+		781DD1C32B4ACE2B000B501D /* ShoppingTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ShoppingTab;
+			sourceTree = "<group>";
+		};
+		781DD1C42B4ACE40000B501D /* EditingTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EditingTab;
+			sourceTree = "<group>";
+		};
+		781DD1C52B4ACE51000B501D /* CreateItemView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CreateItemView;
+			sourceTree = "<group>";
+		};
+		781DD1C62B4ACEBB000B501D /* SettingTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SettingTab;
+			sourceTree = "<group>";
+		};
+		781DD1C72B4ACF88000B501D /* AccountTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AccountTab;
+			sourceTree = "<group>";
+		};
 		78ACCAED2B49AC34004639F2 = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +140,14 @@
 		78ACCAF82B49AC34004639F2 /* ShoppingStar */ = {
 			isa = PBXGroup;
 			children = (
-				78ACCAF92B49AC34004639F2 /* ShoppingStarApp.swift */,
+				781DD1C32B4ACE2B000B501D /* ShoppingTab */,
+				781DD1C42B4ACE40000B501D /* EditingTab */,
+				781DD1C52B4ACE51000B501D /* CreateItemView */,
+				781DD1C62B4ACEBB000B501D /* SettingTab */,
+				781DD1C72B4ACF88000B501D /* AccountTab */,
+				781DD1C02B4ACDA0000B501D /* RootView */,
 				78ACCAFB2B49AC34004639F2 /* ContentView.swift */,
+				781DD1C12B4ACE16000B501D /* MainTabView.swift */,
 				78ACCAFD2B49AC35004639F2 /* Assets.xcassets */,
 				78ACCAFF2B49AC35004639F2 /* ShoppingStar.entitlements */,
 				78ACCB002B49AC35004639F2 /* Preview Content */,
@@ -261,6 +312,7 @@
 			files = (
 				78ACCAFC2B49AC34004639F2 /* ContentView.swift in Sources */,
 				78ACCAFA2B49AC34004639F2 /* ShoppingStarApp.swift in Sources */,
+				781DD1C22B4ACE16000B501D /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
