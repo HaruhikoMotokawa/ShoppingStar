@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		781DD1C22B4ACE16000B501D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781DD1C12B4ACE16000B501D /* MainTabView.swift */; };
+		781DD1CA2B4AD45E000B501D /* ShoppingHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781DD1C92B4AD45E000B501D /* ShoppingHomeView.swift */; };
+		781DD1CD2B4AD497000B501D /* EditingHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781DD1CC2B4AD497000B501D /* EditingHomeView.swift */; };
+		781DD1CF2B4AD4B8000B501D /* CreateItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781DD1CE2B4AD4B8000B501D /* CreateItemView.swift */; };
+		781DD1D22B4AD4E2000B501D /* SettingHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781DD1D12B4AD4E2000B501D /* SettingHomeView.swift */; };
+		781DD1D52B4AD504000B501D /* AccountHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781DD1D42B4AD504000B501D /* AccountHomeView.swift */; };
 		78ACCAFA2B49AC34004639F2 /* ShoppingStarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACCAF92B49AC34004639F2 /* ShoppingStarApp.swift */; };
 		78ACCAFC2B49AC34004639F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACCAFB2B49AC34004639F2 /* ContentView.swift */; };
 		78ACCAFE2B49AC35004639F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78ACCAFD2B49AC35004639F2 /* Assets.xcassets */; };
@@ -36,6 +41,11 @@
 
 /* Begin PBXFileReference section */
 		781DD1C12B4ACE16000B501D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		781DD1C92B4AD45E000B501D /* ShoppingHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingHomeView.swift; sourceTree = "<group>"; };
+		781DD1CC2B4AD497000B501D /* EditingHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingHomeView.swift; sourceTree = "<group>"; };
+		781DD1CE2B4AD4B8000B501D /* CreateItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateItemView.swift; sourceTree = "<group>"; };
+		781DD1D12B4AD4E2000B501D /* SettingHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingHomeView.swift; sourceTree = "<group>"; };
+		781DD1D42B4AD504000B501D /* AccountHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHomeView.swift; sourceTree = "<group>"; };
 		78ACCAF62B49AC34004639F2 /* ShoppingStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78ACCAF92B49AC34004639F2 /* ShoppingStarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingStarApp.swift; sourceTree = "<group>"; };
 		78ACCAFB2B49AC34004639F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +95,7 @@
 		781DD1C32B4ACE2B000B501D /* ShoppingTab */ = {
 			isa = PBXGroup;
 			children = (
+				781DD1C82B4AD43D000B501D /* ShoppingHomeView */,
 			);
 			path = ShoppingTab;
 			sourceTree = "<group>";
@@ -92,6 +103,7 @@
 		781DD1C42B4ACE40000B501D /* EditingTab */ = {
 			isa = PBXGroup;
 			children = (
+				781DD1CB2B4AD47B000B501D /* EditingHomeView */,
 			);
 			path = EditingTab;
 			sourceTree = "<group>";
@@ -99,6 +111,7 @@
 		781DD1C52B4ACE51000B501D /* CreateItemView */ = {
 			isa = PBXGroup;
 			children = (
+				781DD1CE2B4AD4B8000B501D /* CreateItemView.swift */,
 			);
 			path = CreateItemView;
 			sourceTree = "<group>";
@@ -106,6 +119,7 @@
 		781DD1C62B4ACEBB000B501D /* SettingTab */ = {
 			isa = PBXGroup;
 			children = (
+				781DD1D02B4AD4C9000B501D /* SettingHomeView */,
 			);
 			path = SettingTab;
 			sourceTree = "<group>";
@@ -113,8 +127,41 @@
 		781DD1C72B4ACF88000B501D /* AccountTab */ = {
 			isa = PBXGroup;
 			children = (
+				781DD1D32B4AD4ED000B501D /* AccountHomeView */,
 			);
 			path = AccountTab;
+			sourceTree = "<group>";
+		};
+		781DD1C82B4AD43D000B501D /* ShoppingHomeView */ = {
+			isa = PBXGroup;
+			children = (
+				781DD1C92B4AD45E000B501D /* ShoppingHomeView.swift */,
+			);
+			path = ShoppingHomeView;
+			sourceTree = "<group>";
+		};
+		781DD1CB2B4AD47B000B501D /* EditingHomeView */ = {
+			isa = PBXGroup;
+			children = (
+				781DD1CC2B4AD497000B501D /* EditingHomeView.swift */,
+			);
+			path = EditingHomeView;
+			sourceTree = "<group>";
+		};
+		781DD1D02B4AD4C9000B501D /* SettingHomeView */ = {
+			isa = PBXGroup;
+			children = (
+				781DD1D12B4AD4E2000B501D /* SettingHomeView.swift */,
+			);
+			path = SettingHomeView;
+			sourceTree = "<group>";
+		};
+		781DD1D32B4AD4ED000B501D /* AccountHomeView */ = {
+			isa = PBXGroup;
+			children = (
+				781DD1D42B4AD504000B501D /* AccountHomeView.swift */,
+			);
+			path = AccountHomeView;
 			sourceTree = "<group>";
 		};
 		78ACCAED2B49AC34004639F2 = {
@@ -311,8 +358,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				78ACCAFC2B49AC34004639F2 /* ContentView.swift in Sources */,
+				781DD1D52B4AD504000B501D /* AccountHomeView.swift in Sources */,
+				781DD1CA2B4AD45E000B501D /* ShoppingHomeView.swift in Sources */,
 				78ACCAFA2B49AC34004639F2 /* ShoppingStarApp.swift in Sources */,
 				781DD1C22B4ACE16000B501D /* MainTabView.swift in Sources */,
+				781DD1CD2B4AD497000B501D /* EditingHomeView.swift in Sources */,
+				781DD1CF2B4AD4B8000B501D /* CreateItemView.swift in Sources */,
+				781DD1D22B4AD4E2000B501D /* SettingHomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
