@@ -8,11 +8,11 @@
 import SwiftUI
 /// 買い物ホーム画面
 struct ShoppingHomeView: View {
-    var body: some View {
-        Text("ShoppingHomeView")
-    }
+  var body: some View {
+    Text("ShoppingHomeView")
+  }
 }
 
 #Preview {
-    ShoppingHomeView()
+  ShoppingHomeView()
 }
