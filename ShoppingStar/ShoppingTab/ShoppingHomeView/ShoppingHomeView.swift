@@ -9,20 +9,6 @@ import SwiftUI
 /// 買い物ホーム画面
 struct ShoppingHomeView: View {
   /// 選択したセレクションの種類
-  enum ShoppingType {
-    case list
-    case map
-    /// タブのラベルのテキスト
-    var label: String {
-      switch self {
-        case .list:
-          "リスト"
-        case .map:
-          "マップ"
-      }
-    }
-  }
-  /// 選択したセレクションの種類
   enum Selection {
     case list
     case map
@@ -37,7 +23,7 @@ struct ShoppingHomeView: View {
     }
   }
   /// 選択したタブのセレクション
-  @State private var shoppingSelection: ShoppingType = .list
+  @State private var shoppingSelection: Selection = .list
   /// 表示する所有者名（多分後でここは変更）
   @State private var ownerName: String = "はるさん"
   /// 後半のテキスト
@@ -62,10 +48,10 @@ struct ShoppingHomeView: View {
         }
         // 上タブ
         Picker("", selection: $shoppingSelection) {
-          Text(ShoppingType.list.label)
-            .tag(ShoppingType.list)
-          Text(ShoppingType.map.label)
-            .tag(ShoppingType.map)
+          Text(Selection.list.label)
+            .tag(Selection.list)
+          Text(Selection.map.label)
+            .tag(Selection.map)
         }
         .pickerStyle(.segmented)
         .colorMultiply(.blue)
@@ -73,9 +59,9 @@ struct ShoppingHomeView: View {
         // 切り替える画面
         TabView(selection: $shoppingSelection) {
           ShoppingListView()
-            .tag(ShoppingType.list)
+            .tag(Selection.list)
           ShoppingMapView()
-            .tag(ShoppingType.map)
+            .tag(Selection.map)
         }
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
         Spacer()
