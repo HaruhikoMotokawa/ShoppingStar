@@ -15,6 +15,7 @@
 		781DD1D52B4AD504000B501D /* AccountHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781DD1D42B4AD504000B501D /* AccountHomeView.swift */; };
 		784DDDE32B4BF5FC001973CA /* ShoppingMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DDDE22B4BF5FC001973CA /* ShoppingMapView.swift */; };
 		784DDDE52B4BF61A001973CA /* ShoppingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DDDE42B4BF61A001973CA /* ShoppingListView.swift */; };
+		784DDDEB2B4C2E75001973CA /* ItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DDDEA2B4C2E75001973CA /* ItemCellView.swift */; };
 		78ACCAFA2B49AC34004639F2 /* ShoppingStarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACCAF92B49AC34004639F2 /* ShoppingStarApp.swift */; };
 		78ACCAFE2B49AC35004639F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78ACCAFD2B49AC35004639F2 /* Assets.xcassets */; };
 		78ACCB022B49AC35004639F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78ACCB012B49AC35004639F2 /* Preview Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		781DD1D42B4AD504000B501D /* AccountHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHomeView.swift; sourceTree = "<group>"; };
 		784DDDE22B4BF5FC001973CA /* ShoppingMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingMapView.swift; sourceTree = "<group>"; };
 		784DDDE42B4BF61A001973CA /* ShoppingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListView.swift; sourceTree = "<group>"; };
+		784DDDEA2B4C2E75001973CA /* ItemCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellView.swift; sourceTree = "<group>"; };
 		78ACCAF62B49AC34004639F2 /* ShoppingStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78ACCAF92B49AC34004639F2 /* ShoppingStarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingStarApp.swift; sourceTree = "<group>"; };
 		78ACCAFD2B49AC35004639F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		781DD1C02B4ACDA0000B501D /* RootView */ = {
 			isa = PBXGroup;
 			children = (
+				781DD1C12B4ACE16000B501D /* MainTabView.swift */,
 				78ACCAF92B49AC34004639F2 /* ShoppingStarApp.swift */,
 			);
 			path = RootView;
@@ -195,6 +198,7 @@
 		784DDDE72B4C2DC5001973CA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				784DDDEA2B4C2E75001973CA /* ItemCellView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -222,14 +226,13 @@
 		78ACCAF82B49AC34004639F2 /* ShoppingStar */ = {
 			isa = PBXGroup;
 			children = (
-				784DDDE62B4C2D66001973CA /* Utility */,
 				781DD1C32B4ACE2B000B501D /* ShoppingTab */,
 				781DD1C42B4ACE40000B501D /* EditingTab */,
 				781DD1C52B4ACE51000B501D /* CreateItemView */,
 				781DD1C62B4ACEBB000B501D /* SettingTab */,
 				781DD1C72B4ACF88000B501D /* AccountTab */,
 				781DD1C02B4ACDA0000B501D /* RootView */,
-				781DD1C12B4ACE16000B501D /* MainTabView.swift */,
+				784DDDE62B4C2D66001973CA /* Utility */,
 				78ACCAFD2B49AC35004639F2 /* Assets.xcassets */,
 				78ACCAFF2B49AC35004639F2 /* ShoppingStar.entitlements */,
 				78ACCB002B49AC35004639F2 /* Preview Content */,
@@ -393,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				784DDDE52B4BF61A001973CA /* ShoppingListView.swift in Sources */,
+				784DDDEB2B4C2E75001973CA /* ItemCellView.swift in Sources */,
 				781DD1D52B4AD504000B501D /* AccountHomeView.swift in Sources */,
 				784DDDE32B4BF5FC001973CA /* ShoppingMapView.swift in Sources */,
 				781DD1CA2B4AD45E000B501D /* ShoppingHomeView.swift in Sources */,
