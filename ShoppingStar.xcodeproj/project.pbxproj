@@ -13,6 +13,8 @@
 		781DD1CF2B4AD4B8000B501D /* CreateItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781DD1CE2B4AD4B8000B501D /* CreateItemView.swift */; };
 		781DD1D22B4AD4E2000B501D /* SettingHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781DD1D12B4AD4E2000B501D /* SettingHomeView.swift */; };
 		781DD1D52B4AD504000B501D /* AccountHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781DD1D42B4AD504000B501D /* AccountHomeView.swift */; };
+		784DDDE32B4BF5FC001973CA /* ShoppingMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DDDE22B4BF5FC001973CA /* ShoppingMapView.swift */; };
+		784DDDE52B4BF61A001973CA /* ShoppingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DDDE42B4BF61A001973CA /* ShoppingListView.swift */; };
 		78ACCAFA2B49AC34004639F2 /* ShoppingStarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACCAF92B49AC34004639F2 /* ShoppingStarApp.swift */; };
 		78ACCAFE2B49AC35004639F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78ACCAFD2B49AC35004639F2 /* Assets.xcassets */; };
 		78ACCB022B49AC35004639F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78ACCB012B49AC35004639F2 /* Preview Assets.xcassets */; };
@@ -45,6 +47,8 @@
 		781DD1CE2B4AD4B8000B501D /* CreateItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateItemView.swift; sourceTree = "<group>"; };
 		781DD1D12B4AD4E2000B501D /* SettingHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingHomeView.swift; sourceTree = "<group>"; };
 		781DD1D42B4AD504000B501D /* AccountHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHomeView.swift; sourceTree = "<group>"; };
+		784DDDE22B4BF5FC001973CA /* ShoppingMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingMapView.swift; sourceTree = "<group>"; };
+		784DDDE42B4BF61A001973CA /* ShoppingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListView.swift; sourceTree = "<group>"; };
 		78ACCAF62B49AC34004639F2 /* ShoppingStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78ACCAF92B49AC34004639F2 /* ShoppingStarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingStarApp.swift; sourceTree = "<group>"; };
 		78ACCAFD2B49AC35004639F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				781DD1C82B4AD43D000B501D /* ShoppingHomeView */,
+				784DDDE02B4BF5B0001973CA /* ShoppingListView */,
+				784DDDE12B4BF5D4001973CA /* ShoppingMapView */,
 			);
 			path = ShoppingTab;
 			sourceTree = "<group>";
@@ -160,6 +166,22 @@
 				781DD1D42B4AD504000B501D /* AccountHomeView.swift */,
 			);
 			path = AccountHomeView;
+			sourceTree = "<group>";
+		};
+		784DDDE02B4BF5B0001973CA /* ShoppingListView */ = {
+			isa = PBXGroup;
+			children = (
+				784DDDE42B4BF61A001973CA /* ShoppingListView.swift */,
+			);
+			path = ShoppingListView;
+			sourceTree = "<group>";
+		};
+		784DDDE12B4BF5D4001973CA /* ShoppingMapView */ = {
+			isa = PBXGroup;
+			children = (
+				784DDDE22B4BF5FC001973CA /* ShoppingMapView.swift */,
+			);
+			path = ShoppingMapView;
 			sourceTree = "<group>";
 		};
 		78ACCAED2B49AC34004639F2 = {
@@ -354,7 +376,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				784DDDE52B4BF61A001973CA /* ShoppingListView.swift in Sources */,
 				781DD1D52B4AD504000B501D /* AccountHomeView.swift in Sources */,
+				784DDDE32B4BF5FC001973CA /* ShoppingMapView.swift in Sources */,
 				781DD1CA2B4AD45E000B501D /* ShoppingHomeView.swift in Sources */,
 				78ACCAFA2B49AC34004639F2 /* ShoppingStarApp.swift in Sources */,
 				781DD1C22B4ACE16000B501D /* MainTabView.swift in Sources */,
