@@ -14,7 +14,6 @@
 		781DD1D22B4AD4E2000B501D /* SettingHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781DD1D12B4AD4E2000B501D /* SettingHomeView.swift */; };
 		781DD1D52B4AD504000B501D /* AccountHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781DD1D42B4AD504000B501D /* AccountHomeView.swift */; };
 		78ACCAFA2B49AC34004639F2 /* ShoppingStarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACCAF92B49AC34004639F2 /* ShoppingStarApp.swift */; };
-		78ACCAFC2B49AC34004639F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACCAFB2B49AC34004639F2 /* ContentView.swift */; };
 		78ACCAFE2B49AC35004639F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78ACCAFD2B49AC35004639F2 /* Assets.xcassets */; };
 		78ACCB022B49AC35004639F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78ACCB012B49AC35004639F2 /* Preview Assets.xcassets */; };
 		78ACCB0C2B49AC35004639F2 /* ShoppingStarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACCB0B2B49AC35004639F2 /* ShoppingStarTests.swift */; };
@@ -48,7 +47,6 @@
 		781DD1D42B4AD504000B501D /* AccountHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHomeView.swift; sourceTree = "<group>"; };
 		78ACCAF62B49AC34004639F2 /* ShoppingStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78ACCAF92B49AC34004639F2 /* ShoppingStarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingStarApp.swift; sourceTree = "<group>"; };
-		78ACCAFB2B49AC34004639F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		78ACCAFD2B49AC35004639F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78ACCAFF2B49AC35004639F2 /* ShoppingStar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShoppingStar.entitlements; sourceTree = "<group>"; };
 		78ACCB012B49AC35004639F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -193,7 +191,6 @@
 				781DD1C62B4ACEBB000B501D /* SettingTab */,
 				781DD1C72B4ACF88000B501D /* AccountTab */,
 				781DD1C02B4ACDA0000B501D /* RootView */,
-				78ACCAFB2B49AC34004639F2 /* ContentView.swift */,
 				781DD1C12B4ACE16000B501D /* MainTabView.swift */,
 				78ACCAFD2B49AC35004639F2 /* Assets.xcassets */,
 				78ACCAFF2B49AC35004639F2 /* ShoppingStar.entitlements */,
@@ -357,7 +354,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78ACCAFC2B49AC34004639F2 /* ContentView.swift in Sources */,
 				781DD1D52B4AD504000B501D /* AccountHomeView.swift in Sources */,
 				781DD1CA2B4AD45E000B501D /* ShoppingHomeView.swift in Sources */,
 				78ACCAFA2B49AC34004639F2 /* ShoppingStarApp.swift in Sources */,
