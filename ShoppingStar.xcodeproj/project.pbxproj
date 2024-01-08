@@ -184,6 +184,21 @@
 			path = ShoppingMapView;
 			sourceTree = "<group>";
 		};
+		784DDDE62B4C2D66001973CA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				784DDDE72B4C2DC5001973CA /* Components */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		784DDDE72B4C2DC5001973CA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		78ACCAED2B49AC34004639F2 = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +222,7 @@
 		78ACCAF82B49AC34004639F2 /* ShoppingStar */ = {
 			isa = PBXGroup;
 			children = (
+				784DDDE62B4C2D66001973CA /* Utility */,
 				781DD1C32B4ACE2B000B501D /* ShoppingTab */,
 				781DD1C42B4ACE40000B501D /* EditingTab */,
 				781DD1C52B4ACE51000B501D /* CreateItemView */,
