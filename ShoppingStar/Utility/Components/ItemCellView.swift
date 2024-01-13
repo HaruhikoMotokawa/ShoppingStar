@@ -36,26 +36,34 @@ struct ItemCellView: View {
 // MARK: - func View
 private extension ItemCellView {
   /// セル
-  func cell() -> some View{
+  @ViewBuilder func cell() -> some View{
     // 通常のRGB値は0〜255だが、Swiftだと0〜1.0で入力する。なのでRGB値/255の値を入れる
     let red: Double = 217/255
     let green: Double = 217/255
     let blue: Double = 217/255
     let cellColor = Color(red: red, green: green, blue: blue)
     // 上記のようにView関数内にローカル定数作るなら以下のように最初にreturnつけないといけない
-    return HStack {
-      VStack(alignment: .leading) {
-        Text(salesFloor.name)
-          .padding(.horizontal, 20)
-          .padding(.vertical, 5)
-          .background(salesFloorColor)
-          .clipShape(RoundedRectangle(cornerRadius: 25.0))
-        Text(item.name)
-        Text(String(item.amount) + item.unit)
-      } // VStack
-      Spacer()
-      imageView()
-    } // HStack
+    // または@/ViewBuilderつければいないからこっちの方がいいのか
+    VStack {
+      HStack {
+        VStack(alignment: .leading, spacing: 5) {
+          Text(salesFloor.name)
+            .fontWeight(.semibold)
+            .padding(.horizontal, 20)
+            .padding(.vertical, 5)
+            .background(salesFloorColor)
+            .clipShape(RoundedRectangle(cornerRadius: 25.0))
+          Text(item.name)
+            .font(.title2)
+            .fontWeight(.semibold)
+          Text(String(item.amount) + item.unit)
+            .fontWeight(.semibold)
+        } // VStack
+        Spacer()
+        imageView()
+      } // HStack
+      remarksText()
+    } // VStack
     .padding(.vertical, 10)
     .padding(.horizontal, 15)
     // ここの色をRGBで
@@ -63,7 +71,7 @@ private extension ItemCellView {
     .clipShape(RoundedRectangle(cornerRadius: 25.0))
     .compositingGroup() // VIewの複数の要素をグループ化すると背景にだけ影をつけれる
     .shadow(color: .gray, radius: 3, x: 10, y: 10)
-  } // func cell()
+  }
   /// 画像のView
   @ViewBuilder func imageView() -> some View {
     if let url = item.dummyImageUrl {
@@ -99,12 +107,33 @@ private extension ItemCellView {
       } // VStack
     } // ZStack
   } // VStack
+  /// 備考を表示するViewで備考がなければ生成されない
+  @ViewBuilder func remarksText() -> some View {
+    if let remarksText = item.remarks {
+      VStack(alignment: .leading) {
+        Divider()
+        Text(remarksText)
+          .fontWeight(.light)
+      }
+    }
+  }
 }
 
 #Preview {
   ItemCellView(
     screenWidth: 375,
-    item: Item.`init`,
+    item: .init(
+      id: nil,
+      name: "人参",
+      houseNumber: 1,
+      amount: 1,
+      unit: "本",
+      imageUrl: nil,
+      remarks: "これはどうでしょう、長々と描いて見てますが、こんなに長く描いたらどうゆうふうに表示されますか？",
+      authorId: "A",
+      creationDay: Date(),
+      dummyImageUrl: .hobby2
+    ),
     salesFloors: SalesFloor.default
   )
 }
