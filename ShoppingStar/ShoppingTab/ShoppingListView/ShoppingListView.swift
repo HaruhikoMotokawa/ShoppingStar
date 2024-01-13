@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct ShoppingListView: View {
-    var body: some View {
-        Text("ShoppingListView")
-        .padding(.all, 100)
-        .background(.red)
-    }
+
+  let screenWidth: CGFloat
+  // MARK: - body
+  var body: some View {
+    ScrollView {
+      LazyVStack(spacing: 15){
+        ForEach(Item.dummy) { item in
+          ItemCellView(
+            screenWidth: screenWidth,
+            item: item,
+            salesFloors: SalesFloor.default
+          )
+        } // ForEach
+      } // LazyVStack
+    } // ScrollView
+  } // body
 }
 
 #Preview {
-    ShoppingListView()
+  ShoppingListView(screenWidth: 375)
 }

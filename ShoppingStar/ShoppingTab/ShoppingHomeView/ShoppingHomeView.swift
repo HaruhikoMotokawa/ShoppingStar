@@ -58,7 +58,7 @@ struct ShoppingHomeView: View {
         Divider()
         // 切り替える画面
         TabView(selection: $shoppingSelection) {
-          ShoppingListView()
+          ShoppingListView(screenWidth: geometry.size.width)
             .tag(Selection.list)
           ShoppingMapView()
             .tag(Selection.map)
