@@ -80,6 +80,9 @@ private extension ItemCellView {
         .aspectRatio(contentMode: .fit)
         .frame(width: screenWidth/5)
         .clipShape(RoundedRectangle(cornerRadius: 10))
+        .background(RoundedRectangle(cornerRadius: 10)
+        .stroke(lineWidth: 2.0)
+        .foregroundStyle(.black))
     } else {
       noImageView()
     }
