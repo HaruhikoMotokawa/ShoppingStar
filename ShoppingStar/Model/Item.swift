@@ -7,7 +7,7 @@
 
 import Foundation
 /// 商品情報
-struct Item {
+struct Item: Identifiable {
   /// FirestoreのドキュメントID
   var id: String?
   /// 商品名
@@ -44,6 +44,7 @@ extension Item {
   /// ダミー
   static let dummy: [Item] = [
     Item(
+      id: UUID().uuidString,
       name: "豚肉",
       houseNumber: 1,
       amount: 1,
@@ -52,7 +53,8 @@ extension Item {
       creationDay: Date(), dummyImageUrl: .hobby2
     ),
     Item(
-      name: "豚肉",
+      id: UUID().uuidString,
+      name: "たまご",
       houseNumber: 5,
       amount: 1,
       unit: "パック",
@@ -60,7 +62,8 @@ extension Item {
       creationDay: Date()
     ),
     Item(
-      name: "豚肉",
+      id: UUID().uuidString,
+      name: "人参",
       houseNumber: 9,
       amount: 1,
       unit: "パック",
@@ -68,12 +71,67 @@ extension Item {
       creationDay: Date()
     ),
     Item(
-      name: "豚肉",
+      id: UUID().uuidString,
+      name: "パン粉",
       houseNumber: 10,
       amount: 1,
       unit: "パック",
       authorId: "",
-      creationDay: Date(), dummyImageUrl: .intro3
-    )
+      creationDay: Date(), dummyImageUrl: .work3
+    ),
+    Item(
+      id: UUID().uuidString,
+      name: "牛乳プリン",
+      houseNumber: 3,
+      amount: 1,
+      unit: "パック",
+      authorId: "",
+      creationDay: Date(), dummyImageUrl: .work3
+    ),
+    Item(
+      id: UUID().uuidString,
+      name: "牛乳プリン",
+      houseNumber: 2,
+      amount: 1,
+      unit: "パック",
+      authorId: "",
+      creationDay: Date(), dummyImageUrl: .cook1
+    ),
+    Item(
+      id: UUID().uuidString,
+      name: "牛乳プリン",
+      houseNumber: 9,
+      amount: 1,
+      unit: "パック",
+      authorId: "",
+      creationDay: Date(), dummyImageUrl: .cook4
+    ),
+    Item(
+      id: UUID().uuidString,
+      name: "牛乳プリン",
+      houseNumber: 7,
+      amount: 1,
+      unit: "パック",
+      authorId: "",
+      creationDay: Date(), dummyImageUrl: .cook3
+    ),
+    Item(
+      id: UUID().uuidString,
+      name: "牛乳プリン",
+      houseNumber: 16,
+      amount: 1,
+      unit: "パック",
+      authorId: "",
+      creationDay: Date(), dummyImageUrl: .cook1
+    ),
+    Item(
+      id: UUID().uuidString,
+      name: "牛乳プリン",
+      houseNumber: 13,
+      amount: 1,
+      unit: "パック",
+      authorId: "",
+      creationDay: Date(), dummyImageUrl: .cook2
+    ),
   ]
 }
