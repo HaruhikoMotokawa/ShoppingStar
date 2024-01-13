@@ -23,6 +23,8 @@
 		78ACCB0C2B49AC35004639F2 /* ShoppingStarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACCB0B2B49AC35004639F2 /* ShoppingStarTests.swift */; };
 		78ACCB162B49AC35004639F2 /* ShoppingStarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACCB152B49AC35004639F2 /* ShoppingStarUITests.swift */; };
 		78ACCB182B49AC35004639F2 /* ShoppingStarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACCB172B49AC35004639F2 /* ShoppingStarUITestsLaunchTests.swift */; };
+		78D181D22B528407004B6899 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D181D12B528407004B6899 /* Item.swift */; };
+		78D181D42B52852A004B6899 /* SalesFloor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D181D32B52852A004B6899 /* SalesFloor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		78ACCB112B49AC35004639F2 /* ShoppingStarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingStarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78ACCB152B49AC35004639F2 /* ShoppingStarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingStarUITests.swift; sourceTree = "<group>"; };
 		78ACCB172B49AC35004639F2 /* ShoppingStarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingStarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		78D181D12B528407004B6899 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		78D181D32B52852A004B6899 /* SalesFloor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesFloor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				781080E02B5270CC00B7DAC0 /* SalesFloorColorType.swift */,
+				78D181D12B528407004B6899 /* Item.swift */,
+				78D181D32B52852A004B6899 /* SalesFloor.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -408,8 +414,10 @@
 			files = (
 				781080E12B5270CC00B7DAC0 /* SalesFloorColorType.swift in Sources */,
 				784DDDE52B4BF61A001973CA /* ShoppingListView.swift in Sources */,
+				78D181D42B52852A004B6899 /* SalesFloor.swift in Sources */,
 				784DDDEB2B4C2E75001973CA /* ItemCellView.swift in Sources */,
 				781DD1D52B4AD504000B501D /* AccountHomeView.swift in Sources */,
+				78D181D22B528407004B6899 /* Item.swift in Sources */,
 				784DDDE32B4BF5FC001973CA /* ShoppingMapView.swift in Sources */,
 				781DD1CA2B4AD45E000B501D /* ShoppingHomeView.swift in Sources */,
 				78ACCAFA2B49AC34004639F2 /* ShoppingStarApp.swift in Sources */,
