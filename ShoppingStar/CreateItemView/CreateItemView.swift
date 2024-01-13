@@ -8,11 +8,11 @@
 import SwiftUI
 /// 商品追加画面
 struct CreateItemView: View {
-    var body: some View {
-        Text("CreateItemView")
-    }
+  var body: some View {
+    Text("CreateItemView")
+  }
 }
 
 #Preview {
-    CreateItemView()
+  CreateItemView()
 }

@@ -8,11 +8,11 @@
 import SwiftUI
 /// 編集ホーム画面
 struct EditingHomeView: View {
-    var body: some View {
-        Text("EditingHomeView")
-    }
+  var body: some View {
+    Text("EditingHomeView")
+  }
 }
 
 #Preview {
-    EditingHomeView()
+  EditingHomeView()
 }
