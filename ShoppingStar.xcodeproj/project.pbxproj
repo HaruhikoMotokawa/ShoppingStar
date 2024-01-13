@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		781080E12B5270CC00B7DAC0 /* SalesFloorColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781080E02B5270CC00B7DAC0 /* SalesFloorColorType.swift */; };
 		781DD1C22B4ACE16000B501D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781DD1C12B4ACE16000B501D /* MainTabView.swift */; };
 		781DD1CA2B4AD45E000B501D /* ShoppingHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781DD1C92B4AD45E000B501D /* ShoppingHomeView.swift */; };
 		781DD1CD2B4AD497000B501D /* EditingHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781DD1CC2B4AD497000B501D /* EditingHomeView.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		781080E02B5270CC00B7DAC0 /* SalesFloorColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesFloorColorType.swift; sourceTree = "<group>"; };
 		781DD1C12B4ACE16000B501D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		781DD1C92B4AD45E000B501D /* ShoppingHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingHomeView.swift; sourceTree = "<group>"; };
 		781DD1CC2B4AD497000B501D /* EditingHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingHomeView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		781080DE2B52708300B7DAC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				781080E02B5270CC00B7DAC0 /* SalesFloorColorType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		781DD1C02B4ACDA0000B501D /* RootView */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +236,7 @@
 		78ACCAF82B49AC34004639F2 /* ShoppingStar */ = {
 			isa = PBXGroup;
 			children = (
+				781080DE2B52708300B7DAC0 /* Model */,
 				781DD1C32B4ACE2B000B501D /* ShoppingTab */,
 				781DD1C42B4ACE40000B501D /* EditingTab */,
 				781DD1C52B4ACE51000B501D /* CreateItemView */,
@@ -395,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				781080E12B5270CC00B7DAC0 /* SalesFloorColorType.swift in Sources */,
 				784DDDE52B4BF61A001973CA /* ShoppingListView.swift in Sources */,
 				784DDDEB2B4C2E75001973CA /* ItemCellView.swift in Sources */,
 				781DD1D52B4AD504000B501D /* AccountHomeView.swift in Sources */,
