@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-/// 文字列を縦書きて表示するText
+/// 文字列を縦書きで表示するText
 struct VerticalText: View {
   /// 表示する文字列
   let text: String
@@ -14,14 +14,14 @@ struct VerticalText: View {
   var body: some View {
     VStack {
       // 受け取った文字列を一つづつVStackに入れて上から下に並べていく
-      ForEach(text.map { String($0) }, id: \.self) { character in
+      ForEach(Array(text.enumerated()), id: \.offset) { index, character in
         // 半角、全角の伸ばし棒は９０度回転させる
         if character == "-" || character == "ー" {
-          Text(character)
+          Text(String(character))
             .rotationEffect(.degrees(90))
         } else {
-          // どれ以外の文字はそのまま並べる
-          Text(character)
+          // それ以外の文字はそのまま並べる
+          Text(String(character))
         } // if&else
       } // ForEach
     } // VStack
