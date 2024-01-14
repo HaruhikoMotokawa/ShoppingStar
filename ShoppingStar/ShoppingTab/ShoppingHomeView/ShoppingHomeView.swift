@@ -63,7 +63,10 @@ struct ShoppingHomeView: View {
             screenHeight: .constant(geometry.size.height)
           )
             .tag(Selection.list)
-          ShoppingMapView()
+          ShoppingMapView(
+            screenHeight: .constant(geometry.size.height),
+            screenWidth: .constant(geometry.size.width)
+          )
             .tag(Selection.map)
         }
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))

@@ -9,8 +9,8 @@ import SwiftUI
 /// 買い物マップ
 struct ShoppingMapView: View {
 
-  var screenHeight: CGFloat = 932
-  var screenWidth: CGFloat = 430
+  @Binding var screenHeight: CGFloat
+  @Binding var screenWidth: CGFloat
   var isStartShoppingFromRight: Bool = true
   // MARK: - body
   var body: some View {
@@ -124,5 +124,5 @@ private extension ShoppingMapView {
 }
 
 #Preview {
-  ShoppingMapView()
+  ShoppingMapView(screenHeight: .constant(932), screenWidth: .constant(430))
 }
