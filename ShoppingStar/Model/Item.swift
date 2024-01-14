@@ -58,6 +58,7 @@ extension Item {
       houseNumber: 5,
       amount: 1,
       unit: "パック",
+      remarks: "これはどうでしょう、長々と描いて見てますが、こんなに長く描いたらどうゆうふうに表示されますか？",
       authorId: "",
       creationDay: Date()
     ),
@@ -76,6 +77,7 @@ extension Item {
       houseNumber: 10,
       amount: 1,
       unit: "パック",
+      remarks: "これはどうでしょう、長々と描いて見てますが、こんなに長く描いたらどうゆうふうに表示されますか？",
       authorId: "",
       creationDay: Date(), dummyImageUrl: .work3
     ),
@@ -103,8 +105,10 @@ extension Item {
       houseNumber: 9,
       amount: 1,
       unit: "パック",
+      remarks: "これはどうでしょう、長々と描いて見てますが、こんなに長く描いたらどうゆうふうに表示されますか？",
       authorId: "",
-      creationDay: Date(), dummyImageUrl: .cook4
+      creationDay: Date(),
+      dummyImageUrl: .cook4
     ),
     Item(
       id: UUID().uuidString,
