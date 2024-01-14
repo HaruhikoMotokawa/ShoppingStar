@@ -8,8 +8,10 @@
 import SwiftUI
 /// 商品を表示するセル
 struct ItemCellView: View {
-  /// 画面サイズ
-  let screenWidth: CGFloat
+  /// 画面の横サイズ
+  @Binding var screenWidth: CGFloat
+  /// 画面の縦サイズ
+  @Binding var screenHeight: CGFloat
   /// 商品情報
   let item: Item
   /// 売り場の配列
@@ -23,12 +25,14 @@ struct ItemCellView: View {
   var salesFloorColor: Color {
     SalesFloorColorType(rawValue: salesFloor.colorTypeRawValue)?.color ?? Color.white
   }
+  /// 写真のビューワーを表示させるフラグ
+  @State private var isImageViewerPresented: Bool = false
   // MARK: - body
   var body: some View {
     HStack(spacing: 20) {
       Image(systemName: "circle")
       cell()
-//              Image(systemName: "circle")
+      //              Image(systemName: "circle")
     } // HStack
     .padding(.horizontal, 10)
   } // body
@@ -74,15 +78,44 @@ private extension ItemCellView {
   }
   /// 画像のView
   @ViewBuilder func imageView() -> some View {
+    let screenWidthRatio = 0.9
+    let screenHeightRatio = 0.8
     if let url = item.dummyImageUrl {
-      Image(url)
-        .resizable()
-        .aspectRatio(contentMode: .fit)
-        .frame(width: screenWidth/5)
-        .clipShape(RoundedRectangle(cornerRadius: 10))
-        .background(RoundedRectangle(cornerRadius: 10)
-        .stroke(lineWidth: 2.0)
-        .foregroundStyle(.black))
+      Button {
+        isImageViewerPresented.toggle()
+      } label: {
+        Image(url)
+          .resizable()
+          .aspectRatio(contentMode: .fit)
+          .frame(width: screenWidth/5)
+          .clipShape(RoundedRectangle(cornerRadius: 10))
+          .background(RoundedRectangle(cornerRadius: 10)
+            .stroke(lineWidth: 2.0)
+            .foregroundStyle(.black))
+      }
+      .sheet(isPresented: $isImageViewerPresented) {
+        VStack(spacing: 20) {
+          Image(url)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .clipShape(RoundedRectangle(cornerRadius: 10))
+            .background(RoundedRectangle(cornerRadius: 10)
+              .stroke(lineWidth: 2.0)
+              .foregroundStyle(.black))
+            .frame(
+              maxWidth: screenWidth * screenWidthRatio,
+              maxHeight: screenHeight * screenHeightRatio
+            )
+          Button {
+            isImageViewerPresented = false
+          } label: {
+            Text("閉じる")
+              .fontWeight(.semibold)
+              .tint(.white)
+          }
+        } // VStack
+        .presentationBackground(Color.black.opacity(0.8))
+      } // fullScreenCover
     } else {
       noImageView()
     }
@@ -109,7 +142,7 @@ private extension ItemCellView {
           .foregroundStyle(.white)
       } // VStack
     } // ZStack
-  } // VStack
+  }
   /// 備考を表示するViewで備考がなければ生成されない
   @ViewBuilder func remarksText() -> some View {
     if let remarksText = item.remarks {
@@ -124,7 +157,8 @@ private extension ItemCellView {
 
 #Preview {
   ItemCellView(
-    screenWidth: 375,
+    screenWidth: .constant(375),
+    screenHeight: .constant(680),
     item: .init(
       id: nil,
       name: "人参",
