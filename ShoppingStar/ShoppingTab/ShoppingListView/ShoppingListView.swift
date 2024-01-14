@@ -9,14 +9,17 @@ import SwiftUI
 
 struct ShoppingListView: View {
 
-  let screenWidth: CGFloat
+  @Binding var screenWidth: CGFloat
+
+  @Binding var screenHeight: CGFloat
   // MARK: - body
   var body: some View {
     ScrollView {
       LazyVStack(spacing: 15){
         ForEach(Item.dummy) { item in
           ItemCellView(
-            screenWidth: screenWidth,
+            screenWidth: $screenWidth,
+            screenHeight: $screenHeight,
             item: item,
             salesFloors: SalesFloor.default
           )
@@ -27,5 +30,8 @@ struct ShoppingListView: View {
 }
 
 #Preview {
-  ShoppingListView(screenWidth: 375)
+  ShoppingListView(
+    screenWidth: .constant(375),
+    screenHeight: .constant(670)
+  )
 }

@@ -8,8 +8,10 @@
 import SwiftUI
 /// 商品を表示するセル
 struct ItemCellView: View {
-  /// 画面サイズ
-  let screenWidth: CGFloat
+  /// 画面の横サイズ
+  @Binding var screenWidth: CGFloat
+  /// 画面の縦サイズ
+  @Binding var screenHeight: CGFloat
   /// 商品情報
   let item: Item
   /// 売り場の配列
@@ -124,7 +126,8 @@ private extension ItemCellView {
 
 #Preview {
   ItemCellView(
-    screenWidth: 375,
+    screenWidth: .constant(375),
+    screenHeight: .constant(680),
     item: .init(
       id: nil,
       name: "人参",
